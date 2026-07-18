@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            z-index: 1000;
+
+        }
+        main.barcontent {
+            padding-top: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.netflix.com" target="_blank" class="top-bar">
+        <strong>New to Netflix?</strong>
+    </a>
+
+    <div class="main">
+
+        <nav>
+            <a href="https://www.netflix.com" target="_blank">
+                <img src="assets/Netflix logo.svg" alt="Netflix Logo" class="logo">
+            </a>
+            <button class="btn">Sign In</button>
+        </nav>
+
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Unlimited movies, <br> TV shows and more</h1>
+            <h3>Starts at ₹149. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart membership.</p>
+
+            <div class="email-box"> 
+                <input type="email" placeholder="Email address">
+                <button class="get-started">Get Started ></button>
+            </div>
+                <p id="new-line">New members only. Terms below.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Netflix India</p>
+    </footer>
+
+</body>
+</html>
